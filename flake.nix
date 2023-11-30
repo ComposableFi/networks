@@ -13,7 +13,7 @@
       packages.x86_64-darwin.default = nixpkgs.legacyPackages.x86_64-darwin.writeShellScriptBin "default" (gen lib);
       packages.aarch64-linux.default = nixpkgs.legacyPackages.aarch64-linux.writeShellScriptBin "default" (gen lib);
       packages.aarch64-darwin.default = nixpkgs.legacyPackages.aarch64-darwin.writeShellScriptBin "default" (gen lib);
-      overlays = final: prev: {
+      overlays.default = final: prev: {
         networksLib = lib;
       };
       lib = import ./networks.nix;
