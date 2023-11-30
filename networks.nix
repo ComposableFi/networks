@@ -1,6 +1,14 @@
 rec {
   devnet = {
     devnetRootDirectory = "/tmp/composable-devnet";
+    mnemonics = {
+      VAL_MNEMONIC_1 = "clock post desk civil pottery foster expand merit dash seminar song memory figure uniform spice circle try happy obvious trash crime hybrid hood cushion";
+      DEMO_MNEMONIC_1 = "banner spread envelope side kite person disagree path silver will brother under couch edit food venture squirrel civil budget number acquire point work mass";
+      DEMO_MNEMONIC_2 = "veteran try aware erosion drink dance decade comic dawn museum release episode original list ability owner size tuition surface ceiling depth seminar capable only";
+      DEMO_MNEMONIC_3 = "obscure canal because tomorrow tribe sibling describe satoshi kiwi upgrade bless empty math trend erosion oblige donate label birth chronic hazard ensure wreck shine";
+      RLY_MNEMONIC_1 = "alley afraid soup fall idea toss can goose become valve initial strong forward bright dish figure check leopard decide warfare hub unusual join cart";
+      RLY_MNEMONIC_2 = "record gift you once hip style during joke field prize dust unique length more pencil transfer quit train device arrive energy sort steak upset";
+    };
   };
   pica = {
     mainnet = {
@@ -53,7 +61,28 @@ rec {
       BINARY = "neutrond";
       NODE = "https://locahost:PORT";
     };
-
+  };
+  cosmos-hub = {
+    mainnet = {
+      FEE = "uatom";
+      NETWORK_ID = 5;
+      CHAIN_ID = "cosmoshub-4";
+      DIR = "prod/.gaiad";
+      BINARY = "gaiad";
+      BLOCK_SECONDS = 6;
+      NODE = "https://rpc.neutron.zone:443";
+    };
+    devnet = rec {
+      HOME = "${devnet.devnetRootDirectory}";
+      CHAIN_DATA = "${HOME}/.gaiad";
+      KEYRING_TEST = CHAIN_DATA;
+      CHAIN_ID = "test-2";
+      PORT = 26957;
+      BLOCK_SECONDS = 5;
+      FEE = "uatom";
+      BINARY = "gaiad";
+      NODE = "https://locahost:PORT";
+    };
   };
   osmosis = {
     mainnet = {
