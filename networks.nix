@@ -56,9 +56,11 @@ rec {
     };
     devnet = rec {
       HOME = "${devnet.devnetRootDirectory}";
+      BASE_DIR = HOME;
       CHAIN_DATA = "${HOME}/.neutrond";
       KEYRING_TEST = CHAIN_DATA;
       CHAIN_ID = "neutron-1";
+      CHAINID = CHAIN_ID;
       PORT = RPCPORT;
       P2PPORT = 26756;
       RPCPORT = 26757;
