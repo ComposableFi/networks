@@ -58,6 +58,7 @@ rec {
       HOME = "${devnet.devnetRootDirectory}";
       BASE_DIR = HOME;
       CHAIN_DATA = "${HOME}/.neutrond";
+      CHAIN_DIR = CHAIN_DATA;
       KEYRING_TEST = CHAIN_DATA;
       CHAIN_ID = "neutron-1";
       CHAINID = CHAIN_ID;
