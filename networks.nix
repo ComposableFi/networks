@@ -68,7 +68,7 @@ rec {
       IBCATOMDENOM = "uibcatom";
       IBCUSDCDENOM = "uibcusdc";
       BINARY = "neutrond";
-      NODE = "https://locahost:${PORT}";
+      NODE = "https://locahost:${builtins.toString PORT}";
     };
   };
   cosmos-hub = {
