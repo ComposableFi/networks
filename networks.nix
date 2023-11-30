@@ -2,7 +2,6 @@ rec {
   devnet = {
     devnetRootDirectory = "/tmp/composable-devnet";
     mnemonics = {
-      VAL_MNEMONIC_1 = "clock post desk civil pottery foster expand merit dash seminar song memory figure uniform spice circle try happy obvious trash crime hybrid hood cushion";
       DEMO_MNEMONIC_1 = "banner spread envelope side kite person disagree path silver will brother under couch edit food venture squirrel civil budget number acquire point work mass";
       DEMO_MNEMONIC_2 = "veteran try aware erosion drink dance decade comic dawn museum release episode original list ability owner size tuition surface ceiling depth seminar capable only";
       DEMO_MNEMONIC_3 = "obscure canal because tomorrow tribe sibling describe satoshi kiwi upgrade bless empty math trend erosion oblige donate label birth chronic hazard ensure wreck shine";
@@ -41,8 +40,11 @@ rec {
     };
   };
   neutron = {
-    mainnet = {
+    mainnet = rec {
+      STAKEDENOM = FEE;
       FEE = "untrn";
+      IBCATOMDENOM = "uibcatom";
+      IBCUSDCDENOM = "uibcusdc";
       NETWORK_ID = 4;
       CHAIN_ID = "neutron-1";
       DIR = "prod/.neutrond";
@@ -55,9 +57,16 @@ rec {
       CHAIN_DATA = "${HOME}/.neutrond";
       KEYRING_TEST = CHAIN_DATA;
       CHAIN_ID = "neutron-1";
-      PORT = 26857;
+      PORT = RPCPORT;
+      P2PPORT = "26756";
+      RPCPORT = "26757";
+      RESTPORT = "1417";
+      ROSETTA = "8181";
       BLOCK_SECONDS = 5;
+      STAKEDENOM = FEE;
       FEE = "untrn";
+      IBCATOMDENOM = "uibcatom";
+      IBCUSDCDENOM = "uibcusdc";
       BINARY = "neutrond";
       NODE = "https://locahost:PORT";
     };
