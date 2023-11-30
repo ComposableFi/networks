@@ -58,17 +58,17 @@ rec {
       KEYRING_TEST = CHAIN_DATA;
       CHAIN_ID = "neutron-1";
       PORT = RPCPORT;
-      P2PPORT = "26756";
-      RPCPORT = "26757";
-      RESTPORT = "1417";
-      ROSETTA = "8181";
+      P2PPORT = 26756;
+      RPCPORT = 26757;
+      RESTPORT = 1417;
+      ROSETTA = 8181;
       BLOCK_SECONDS = 5;
       STAKEDENOM = FEE;
       FEE = "untrn";
       IBCATOMDENOM = "uibcatom";
       IBCUSDCDENOM = "uibcusdc";
       BINARY = "neutrond";
-      NODE = "https://locahost:PORT";
+      NODE = "https://locahost:${PORT}";
     };
   };
   cosmos-hub = {
