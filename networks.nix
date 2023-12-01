@@ -43,8 +43,8 @@ rec {
   };
   neutron =
     let
-      shared = { NETWORK_ID = 4;PORT = 1232133; };
-      devnetTemplate = self : rec {
+      shared = { NETWORK_ID = 4; PORT = 1232133; };
+      devnetTemplate = self: rec {
         HOME = "${devnet.devnetRootDirectory}";
         BASE_DIR = HOME;
         CHAIN_DATA = "${HOME}/.neutrond";
@@ -69,7 +69,7 @@ rec {
       };
     in
     {
-      devnet = let overriden = devnetTemplate ( overriden // shared); in overriden;  
+      devnet = let overriden = devnetTemplate (shared // overriden); in overriden;
       mainnet = shared // rec {
         STAKEDENOM = FEE;
         FEE = "untrn";
