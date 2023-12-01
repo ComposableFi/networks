@@ -1,24 +1,28 @@
 {
   "cosmos-hub": {
     "devnet": {
-      "BINARY": "gaiad",
-      "BLOCK_SECONDS": 5,
       "CHAIN_DATA": "/tmp/composable-devnet/.gaiad",
-      "CHAIN_ID": "test-2",
-      "FEE": "uatom",
+      "GRPCPORT": 19095,
+      "GRPCWEB": 19096,
       "HOME": "/tmp/composable-devnet",
       "KEYRING_TEST": "/tmp/composable-devnet/.gaiad",
-      "NODE": "https://locahost:PORT",
-      "PORT": 26957
+      "NODE": "https://locahost:28857",
+      "P2PPORT": 26856,
+      "PORT": 28857,
+      "RESTPORT": 1516,
+      "ROSETTA": 8281,
+      "RPCPORT": 28857
     },
     "mainnet": {
       "BINARY": "gaiad",
       "BLOCK_SECONDS": 6,
-      "CHAIN_ID": "cosmoshub-4",
+      "CHAINID": "cosmos-hub-4",
+      "CHAIN_ID": "cosmos-hub-4",
       "DIR": "prod/.gaiad",
       "FEE": "uatom",
       "NETWORK_ID": 5,
-      "NODE": "https://rpc.neutron.zone:443"
+      "NODE": "https://rpc.cosmos-hub.zone:443",
+      "STAKEDENOM": "uatom"
     }
   },
   "devnet": {

@@ -43,28 +43,9 @@ rec {
   };
   neutron = import ./neutron.nix { inherit devnet; };
     
-  cosmos-hub = {
-    mainnet = {
-      FEE = "uatom";
-      NETWORK_ID = 5;
-      CHAIN_ID = "cosmoshub-4";
-      DIR = "prod/.gaiad";
-      BINARY = "gaiad";
-      BLOCK_SECONDS = 6;
-      NODE = "https://rpc.neutron.zone:443";
-    };
-    devnet = rec {
-      HOME = "${devnet.devnetRootDirectory}";
-      CHAIN_DATA = "${HOME}/.gaiad";
-      KEYRING_TEST = CHAIN_DATA;
-      CHAIN_ID = "test-2";
-      PORT = 26957;
-      BLOCK_SECONDS = 5;
-      FEE = "uatom";
-      BINARY = "gaiad";
-      NODE = "https://locahost:PORT";
-    };
-  };
+  cosmos-hub = import ./cosmos-hub.nix { inherit devnet; };
+
+
   osmosis = {
     mainnet = {
       FEE = "uosmo";
