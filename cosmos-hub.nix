@@ -17,13 +17,15 @@ in
   };
   devnet = shared // rec {
     P2PPORT = 26856;
-    RPCPORT = 28857;
+    RPCPORT = 28757 + shared.NETWORK_ID;
     RESTPORT = 1516;
     ROSETTA = 8281;
     GRPCPORT = 19090 + shared.NETWORK_ID;
     GRPCWEB = 19091 + shared.NETWORK_ID;
     HOME = "${devnet.devnetRootDirectory}";
+    BASE_DIR = HOME;
     CHAIN_DATA = "${HOME}/.gaiad";
+    CHAIN_DIR = CHAIN_DATA;
     KEYRING_TEST = CHAIN_DATA;
     PORT = RPCPORT;
     NODE = "https://locahost:${builtins.toString PORT}";

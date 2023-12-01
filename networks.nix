@@ -41,11 +41,8 @@ rec {
       BLOCK_TIME = 7;
     };
   };
-  neutron = import ./neutron.nix { inherit devnet; };
-    
+  neutron = import ./neutron.nix { inherit devnet; };    
   cosmos-hub = import ./cosmos-hub.nix { inherit devnet; };
-
-
   osmosis = {
     mainnet = {
       FEE = "uosmo";
