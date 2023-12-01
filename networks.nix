@@ -43,22 +43,8 @@ rec {
   };
   neutron =
     let
-      shared = { NETWORK_ID = 4; };
-    in
-    {
-      mainnet = rec {
-        STAKEDENOM = FEE;
-        FEE = "untrn";
-        IBCATOMDENOM = "uibcatom";
-        IBCUSDCDENOM = "uibcusdc";
-        NETWORK_ID = 4;
-        CHAIN_ID = "neutron-1";
-        DIR = "prod/.neutrond";
-        BINARY = "neutrond";
-        BLOCK_SECONDS = 6;
-        NODE = "https://rpc.neutron.zone:443";
-      };
-      devnet = rec {
+      shared = { NETWORK_ID = 4;PORT = 1232133; };
+      devnetTemplate = self : rec {
         HOME = "${devnet.devnetRootDirectory}";
         BASE_DIR = HOME;
         CHAIN_DATA = "${HOME}/.neutrond";
@@ -71,8 +57,8 @@ rec {
         RPCPORT = 28757;
         RESTPORT = 1417;
         ROSETTA = 8181;
-        GRPCPORT = 19090;
-        GRPCWEB = 19091;
+        GRPCPORT = 19090 + self.NETWORK_ID;
+        GRPCWEB = 19091 + self.NETWORK_ID;
         BLOCK_SECONDS = 5;
         STAKEDENOM = FEE;
         FEE = "untrn";
@@ -80,6 +66,21 @@ rec {
         IBCUSDCDENOM = "uibcusdc";
         BINARY = "neutrond";
         NODE = "https://locahost:${builtins.toString PORT}";
+      };
+    in
+    {
+      devnet = let overriden = devnetTemplate ( overriden // shared); in overriden;  
+      mainnet = shared // rec {
+        STAKEDENOM = FEE;
+        FEE = "untrn";
+        IBCATOMDENOM = "uibcatom";
+        IBCUSDCDENOM = "uibcusdc";
+        NETWORK_ID = 4;
+        CHAIN_ID = "neutron-1";
+        DIR = "prod/.neutrond";
+        BINARY = "neutrond";
+        BLOCK_SECONDS = 6;
+        NODE = "https://rpc.neutron.zone:443";
       };
     };
   cosmos-hub = {
