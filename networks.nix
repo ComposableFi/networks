@@ -41,41 +41,47 @@ rec {
       BLOCK_TIME = 7;
     };
   };
-  neutron = {
-    mainnet = rec {
-      STAKEDENOM = FEE;
-      FEE = "untrn";
-      IBCATOMDENOM = "uibcatom";
-      IBCUSDCDENOM = "uibcusdc";
-      NETWORK_ID = 4;
-      CHAIN_ID = "neutron-1";
-      DIR = "prod/.neutrond";
-      BINARY = "neutrond";
-      BLOCK_SECONDS = 6;
-      NODE = "https://rpc.neutron.zone:443";
+  neutron =
+    let
+      shared = { NETWORK_ID = 4; };
+    in
+    {
+      mainnet = rec {
+        STAKEDENOM = FEE;
+        FEE = "untrn";
+        IBCATOMDENOM = "uibcatom";
+        IBCUSDCDENOM = "uibcusdc";
+        NETWORK_ID = 4;
+        CHAIN_ID = "neutron-1";
+        DIR = "prod/.neutrond";
+        BINARY = "neutrond";
+        BLOCK_SECONDS = 6;
+        NODE = "https://rpc.neutron.zone:443";
+      };
+      devnet = rec {
+        HOME = "${devnet.devnetRootDirectory}";
+        BASE_DIR = HOME;
+        CHAIN_DATA = "${HOME}/.neutrond";
+        CHAIN_DIR = CHAIN_DATA;
+        KEYRING_TEST = CHAIN_DATA;
+        CHAIN_ID = "neutron-1";
+        CHAINID = CHAIN_ID;
+        PORT = RPCPORT;
+        P2PPORT = 26756;
+        RPCPORT = 28757;
+        RESTPORT = 1417;
+        ROSETTA = 8181;
+        GRPCPORT = 19090;
+        GRPCWEB = 19091;
+        BLOCK_SECONDS = 5;
+        STAKEDENOM = FEE;
+        FEE = "untrn";
+        IBCATOMDENOM = "uibcatom";
+        IBCUSDCDENOM = "uibcusdc";
+        BINARY = "neutrond";
+        NODE = "https://locahost:${builtins.toString PORT}";
+      };
     };
-    devnet = rec {
-      HOME = "${devnet.devnetRootDirectory}";
-      BASE_DIR = HOME;
-      CHAIN_DATA = "${HOME}/.neutrond";
-      CHAIN_DIR = CHAIN_DATA;
-      KEYRING_TEST = CHAIN_DATA;
-      CHAIN_ID = "neutron-1";
-      CHAINID = CHAIN_ID;
-      PORT = RPCPORT;
-      P2PPORT = 26756;
-      RPCPORT = 26757;
-      RESTPORT = 1417;
-      ROSETTA = 8181;
-      BLOCK_SECONDS = 5;
-      STAKEDENOM = FEE;
-      FEE = "untrn";
-      IBCATOMDENOM = "uibcatom";
-      IBCUSDCDENOM = "uibcusdc";
-      BINARY = "neutrond";
-      NODE = "https://locahost:${builtins.toString PORT}";
-    };
-  };
   cosmos-hub = {
     mainnet = {
       FEE = "uatom";
