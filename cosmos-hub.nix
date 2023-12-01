@@ -15,7 +15,7 @@ in
     DIR = "prod/.gaiad";
     NODE = "https://rpc.cosmos-hub.zone:443";
   };
-  devnet = rec {
+  devnet = shared // rec {
     P2PPORT = 26856;
     RPCPORT = 28857;
     RESTPORT = 1516;
