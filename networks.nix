@@ -54,6 +54,7 @@ rec {
         CHAINID = CHAIN_ID;
         PORT = RPCPORT;
         P2PPORT = 26756;
+        NETWORK_ID = 666;
         RPCPORT = 28757;
         RESTPORT = 1417;
         ROSETTA = 8181;
