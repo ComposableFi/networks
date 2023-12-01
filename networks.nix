@@ -43,7 +43,7 @@ rec {
   };
   neutron =
     let
-      shared = { NETWORK_ID = 4; PORT = 1232133; };
+      shared = { NETWORK_ID = 4; BLOCK_SECONDS = 5; };
       devnetTemplate = self: rec {
         HOME = "${devnet.devnetRootDirectory}";
         BASE_DIR = HOME;
@@ -54,13 +54,12 @@ rec {
         CHAINID = CHAIN_ID;
         PORT = RPCPORT;
         P2PPORT = 26756;
-        NETWORK_ID = 666;
         RPCPORT = 28757;
         RESTPORT = 1417;
         ROSETTA = 8181;
         GRPCPORT = 19090 + self.NETWORK_ID;
         GRPCWEB = 19091 + self.NETWORK_ID;
-        BLOCK_SECONDS = 5;
+        BLOCK_SECONDS = 6;
         STAKEDENOM = FEE;
         FEE = "untrn";
         IBCATOMDENOM = "uibcatom";
