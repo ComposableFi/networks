@@ -15,6 +15,8 @@
     KEYRING_TEST = CHAIN_DATA;
     CHAIN_ID = "osmosis-dev";
     PORT = 26757;
+    RPCPORT = PORT;
+    GRPCPORT = 19090;
     BLOCK_SECONDS = 5;
     FEE = "uosmo";
     BINARY = "osmosisd";

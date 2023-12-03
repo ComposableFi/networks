@@ -84,9 +84,11 @@
       "CHAIN_DATA": "/tmp/composable-devnet/.osmosisd",
       "CHAIN_ID": "osmosis-dev",
       "FEE": "uosmo",
+      "GRPCPORT": 19090,
       "HOME": "/tmp/composable-devnet",
       "KEYRING_TEST": "/tmp/composable-devnet/.osmosisd",
-      "PORT": 26757
+      "PORT": 26757,
+      "RPCPORT": 26757
     },
     "mainnet": {
       "BINARY": "osmosisd",
