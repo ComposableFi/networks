@@ -19,6 +19,6 @@
       overlays.default = final: prev: {
         networksLib = lib;
       };
-      lib = import ./networks.nix;
+      lib = import ./networks;
     };
 }

@@ -49,13 +49,11 @@
   "neutron": {
     "devnet": {
       "BASE_DIR": "/tmp/composable-devnet",
-      "BINARY": "neutrond",
       "BLOCK_SECONDS": 6,
       "CHAINID": "neutron-1",
       "CHAIN_DATA": "/tmp/composable-devnet/.neutrond",
       "CHAIN_DIR": "/tmp/composable-devnet/.neutrond",
       "CHAIN_ID": "neutron-1",
-      "FEE": "untrn",
       "GRPCPORT": 19094,
       "GRPCWEB": 19095,
       "HOME": "/tmp/composable-devnet",
@@ -71,14 +69,10 @@
       "STAKEDENOM": "untrn"
     },
     "mainnet": {
-      "BINARY": "neutrond",
-      "BLOCK_SECONDS": 6,
       "CHAIN_ID": "neutron-1",
       "DIR": "prod/.neutrond",
-      "FEE": "untrn",
       "IBCATOMDENOM": "uibcatom",
       "IBCUSDCDENOM": "uibcusdc",
-      "NETWORK_ID": 4,
       "NODE": "https://rpc.neutron.zone:443",
       "STAKEDENOM": "untrn"
     }
@@ -124,14 +118,22 @@
   },
   "pica": {
     "devnet": {
+      "BASE_DIR": "/tmp/composable-devnet",
       "BINARY": "centaurid",
       "BLOCK_TIME": 7,
-      "CHAIN_ID": "centauri-dev",
-      "DIR": "testnet/.centaurid",
+      "CHAIN_DATA": "/tmp/composable-devnet/.centaurid",
+      "CHAIN_DIR": "/tmp/composable-devnet/.centaurid",
+      "CHAIN_ID": "centauri-1",
+      "DIR": "/tmp/composable-devnet/.centaurid",
       "FEE": "ppica",
+      "GRPCPORT": 9090,
+      "HOME": "/tmp/composable-devnet",
+      "KEYRING_TEST": "/tmp/composable-devnet/.centaurid",
       "NETWORK_ID": 2,
       "NODE": "tcp://localhost:26657",
-      "PORT": 26657
+      "PORT": 26657,
+      "PREFIX": "centauri",
+      "RPCPORT": 26657
     },
     "mainnet": {
       "BINARY": "centaurid",
@@ -140,7 +142,8 @@
       "DIR": "prod/.centaurid",
       "FEE": "ppica",
       "NETWORK_ID": 2,
-      "NODE": "https://rpc.composable.nodestake.top:443"
+      "NODE": "https://rpc.composable.nodestake.top:443",
+      "PREFIX": "centauri"
     },
     "testnet": {
       "BINARY": "centaurid",
@@ -149,7 +152,8 @@
       "DIR": "testnet/.centaurid",
       "FEE": "ppica",
       "NETWORK_ID": 2,
-      "NODE": "https://rpc-t.composable.nodestake.top:443"
+      "NODE": "https://rpc-t.composable.nodestake.top:443",
+      "PREFIX": "centauri"
     }
   }
 }
