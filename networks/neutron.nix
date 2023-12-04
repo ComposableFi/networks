@@ -5,6 +5,7 @@ let
     BLOCK_SECONDS = 5;
     BINARY = "neutrond";
     FEE = "untrn";
+    ACCOUNT_PREFIX = "neutron";
   };
   devnetTemplate = self: rec {
     HOME = "${devnet.devnetRootDirectory}";

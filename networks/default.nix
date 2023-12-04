@@ -9,10 +9,12 @@ rec {
       DEMO_MNEMONIC_3 = "'obscure canal because tomorrow tribe sibling describe satoshi kiwi upgrade bless empty math trend erosion oblige donate label birth chronic hazard ensure wreck shine'";
       RLY_MNEMONIC_1 = "'alley afraid soup fall idea toss can goose become valve initial strong forward bright dish figure check leopard decide warfare hub unusual join cart'";
       RLY_MNEMONIC_2 = "'record gift you once hip style during joke field prize dust unique length more pencil transfer quit train device arrive energy sort steak upset'";
+      RLY_MNEMONIC_3 = "'black frequent sponsor nice claim rally hunt suit parent size stumble expire forest avocado mistake agree trend witness lounge shiver image smoke stool chicken'";
+      RLY_MNEMONIC_4 = "'symbol force gallery make bulk round subway violin worry mixture penalty kingdom boring survey tool fringe patrol sausage hard admit remember broken alien absorb'";
     };
   };
   pica = import ./pica.nix { inherit devnet; };
-  neutron = import ./neutron.nix { inherit devnet; };    
+  neutron = import ./neutron.nix { inherit devnet; };
   cosmos-hub = import ./cosmos-hub.nix { inherit devnet; };
   osmosis = import ./osmosis.nix { inherit devnet; };
 }
