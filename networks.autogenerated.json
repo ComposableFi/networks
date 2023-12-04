@@ -50,6 +50,7 @@
   },
   "neutron": {
     "devnet": {
+      "ACCOUNT_PREFIX": "neutron",
       "BASE_DIR": "/tmp/composable-devnet",
       "BLOCK_SECONDS": 6,
       "CHAINID": "neutron-1",

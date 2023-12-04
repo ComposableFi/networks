@@ -8,6 +8,7 @@ let
     ACCOUNT_PREFIX = "neutron";
   };
   devnetTemplate = self: rec {
+    ACCOUNT_PREFIX = "neutron";
     HOME = "${devnet.devnetRootDirectory}";
     BASE_DIR = HOME;
     CHAIN_DATA = "${HOME}/.neutrond";
