@@ -21,7 +21,7 @@ let
     RESTPORT = 1417;
     ROSETTA = 8181;
     GRPCPORT = 19090 + self.NETWORK_ID;
-    GRPCWEB = 19091 + self.NETWORK_ID;
+    GRPCWEB = 20091 + self.NETWORK_ID;
     BLOCK_SECONDS = 6;
     STAKEDENOM = self.FEE;
     IBCATOMDENOM = "uibcatom";
