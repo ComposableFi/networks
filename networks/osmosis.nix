@@ -25,6 +25,7 @@ in
     GRPCWEB = 20091 + self.NETWORK_ID;
     PORT = 26657 + self.NETWORK_ID;
     RESTPORT = 1516 + self.NETWORK_ID;
+    P2PPORT = 26756 + self.NETWORK_ID;
     BLOCK_SECONDS = 5;
     FEE = "uosmo";
     BINARY = "osmosisd";

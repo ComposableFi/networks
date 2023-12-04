@@ -4,7 +4,7 @@ Flexible interchain multi domain registry using nextgen configuration language t
 
 ### JSON
 
-JSON output can be read directly by TypeScript and other tooling.s
+JSON output can be read directly by TypeScript and other tooling.
 
 
 ### NIX
@@ -24,5 +24,7 @@ With nix `chain-registry` can be used as need with one liner as dependency of th
 s
 ## Internals
 
-During JSON generation it checks all ports and urls are unique.
+During JSON generation it checks all local ports and remote urls are unique.
+
+Local ports are checked not to be in well known list.
 

@@ -98,6 +98,7 @@
       "HOME": "/tmp/composable-devnet",
       "KEYRING_TEST": "/tmp/composable-devnet/.osmosisd",
       "NETWORK_ID": 3,
+      "P2PPORT": 26759,
       "PORT": 26660,
       "RESTPORT": 1519,
       "RPCPORT": 26660
