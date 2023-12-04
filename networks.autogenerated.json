@@ -98,6 +98,8 @@
       "BLOCK_SECONDS": 5,
       "CHAIN_DATA": "/tmp/composable-devnet/.osmosisd",
       "CHAIN_ID": "osmosis-dev",
+      "CONSENSUS_GRPC_PORT": 39093,
+      "CONSENSUS_RPC_PORT": 38093,
       "FEE": "uosmo",
       "GRPCPORT": 19093,
       "GRPCWEB": 20094,
