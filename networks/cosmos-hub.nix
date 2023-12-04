@@ -21,6 +21,8 @@ in
     RPCPORT = 26657 + self.NETWORK_ID;
     RESTPORT = 1516 + self.NETWORK_ID;
     GRPCPORT = 19090 + self.NETWORK_ID;
+    CONSENSUS_GRPC_PORT = 39090 + self.NETWORK_ID;
+    CONSENSUS_RPC_PORT = 38090 + self.NETWORK_ID;
     GRPCWEB = 20091 + self.NETWORK_ID;
     HOME = "${devnet.devnetRootDirectory}";
     BASE_DIR = HOME;
