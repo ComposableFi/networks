@@ -20,7 +20,7 @@ in
     CHAIN_DATA = "${HOME}/.osmosisd";
     KEYRING_TEST = CHAIN_DATA;
     CHAIN_ID = "osmosis-dev";
-    PORT = 26757;
+    PORT = 26657 + shared.NETWORK_ID;
     RPCPORT = PORT;
     GRPCPORT = 19090;
     GRPCWEB = 20091 + shared.NETWORK_ID;

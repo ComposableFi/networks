@@ -17,7 +17,7 @@ in
   devnet = shared // rec {
     CHAIN_ID = "cosmos-hub-dev";
     P2PPORT = 26856;
-    RPCPORT = 28757 + shared.NETWORK_ID;
+    RPCPORT = 26657 + shared.NETWORK_ID;
     RESTPORT = 1516 + shared.NETWORK_ID;
     ROSETTA = 8281;
     GRPCPORT = 19090 + shared.NETWORK_ID;

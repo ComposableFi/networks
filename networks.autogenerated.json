@@ -13,12 +13,12 @@
       "HOME": "/tmp/composable-devnet",
       "KEYRING_TEST": "/tmp/composable-devnet/.gaiad",
       "NETWORK_ID": 5,
-      "NODE": "https://locahost:28762",
+      "NODE": "https://locahost:26662",
       "P2PPORT": 26856,
-      "PORT": 28762,
+      "PORT": 26662,
       "RESTPORT": 1521,
       "ROSETTA": 8281,
-      "RPCPORT": 28762,
+      "RPCPORT": 26662,
       "STAKEDENOM": "uatom"
     },
     "mainnet": {
@@ -64,12 +64,12 @@
       "IBCUSDCDENOM": "uibcusdc",
       "KEYRING_TEST": "/tmp/composable-devnet/.neutrond",
       "NETWORK_ID": 4,
-      "NODE": "https://locahost:28757",
+      "NODE": "https://locahost:26661",
       "P2PPORT": 26756,
-      "PORT": 28757,
+      "PORT": 26661,
       "RESTPORT": 1321,
       "ROSETTA": 8181,
-      "RPCPORT": 28757,
+      "RPCPORT": 26661,
       "STAKEDENOM": "untrn"
     },
     "mainnet": {
@@ -98,8 +98,8 @@
       "HOME": "/tmp/composable-devnet",
       "KEYRING_TEST": "/tmp/composable-devnet/.osmosisd",
       "NETWORK_ID": 3,
-      "PORT": 26757,
-      "RPCPORT": 26757
+      "PORT": 26660,
+      "RPCPORT": 26660
     },
     "mainnet": {
       "BINARY": "osmosisd",
