@@ -16,7 +16,7 @@
       "NODE": "https://locahost:28762",
       "P2PPORT": 26856,
       "PORT": 28762,
-      "RESTPORT": 1516,
+      "RESTPORT": 1521,
       "ROSETTA": 8281,
       "RPCPORT": 28762,
       "STAKEDENOM": "uatom"

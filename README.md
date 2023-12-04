@@ -7,3 +7,5 @@ This https://github.com/cosmos/chain-registry only for mainnets and Cosmos, whil
 With nix chain-registry can be used as need with one liner.
 
 NIX allows to override inputs to replace local devnet ports as needed and validate there is no overlap.
+
+During JSON generation it checks all ports and urls are unique.
