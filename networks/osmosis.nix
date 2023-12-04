@@ -1,12 +1,12 @@
 { devnet }:
 let
-  shared = {
+  self = {
     NETWORK_ID = 3;
   };
 in
 {
 
-  mainnet = shared // {
+  mainnet = self // {
     FEE = "uosmo";
 
     CHAIN_ID = "osmosis-1";
@@ -15,15 +15,16 @@ in
     BLOCK_SECONDS = 6;
     NODE = "https://rpc.osmosis.zone:443";
   };
-  devnet = shared // rec {
+  devnet = self // rec {
     HOME = "${devnet.devnetRootDirectory}";
     CHAIN_DATA = "${HOME}/.osmosisd";
     KEYRING_TEST = CHAIN_DATA;
     CHAIN_ID = "osmosis-dev";
-    PORT = 26657 + shared.NETWORK_ID;
     RPCPORT = PORT;
-    GRPCPORT = 19090;
-    GRPCWEB = 20091 + shared.NETWORK_ID;
+    GRPCPORT = 19090 + self.NETWORK_ID;
+    GRPCWEB = 20091 + self.NETWORK_ID;
+    PORT = 26657 + self.NETWORK_ID;
+    RESTPORT = 1516 + self.NETWORK_ID;
     BLOCK_SECONDS = 5;
     FEE = "uosmo";
     BINARY = "osmosisd";

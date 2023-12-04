@@ -1,6 +1,6 @@
 { devnet }:
 let
-  shared = {
+  self = {
     NETWORK_ID = 4;
     BLOCK_SECONDS = 5;
     BINARY = "neutrond";
@@ -18,7 +18,7 @@ let
     P2PPORT = 26756 + self.NETWORK_ID;
 
     RPCPORT = 26657 + self.NETWORK_ID;
-    RESTPORT = 1317 + self.NETWORK_ID;
+    RESTPORT = 1516 + self.NETWORK_ID;
     ROSETTA = 8181 + self.NETWORK_ID;
     GRPCPORT = 19090 + self.NETWORK_ID;
     GRPCWEB = 20091 + self.NETWORK_ID;
@@ -39,6 +39,6 @@ let
   };
 in
 {
-  devnet = let overriden = devnetTemplate shared; in shared // overriden;
-  mainnet = let overriden = mainnetTemplate shared; in shared // overriden;
+  devnet = let overriden = devnetTemplate self; in self // overriden;
+  mainnet = let overriden = mainnetTemplate self; in self // overriden;
 }

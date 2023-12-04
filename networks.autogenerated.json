@@ -67,7 +67,7 @@
       "NODE": "https://locahost:26661",
       "P2PPORT": 26760,
       "PORT": 26661,
-      "RESTPORT": 1321,
+      "RESTPORT": 1520,
       "ROSETTA": 8185,
       "RPCPORT": 26661,
       "STAKEDENOM": "untrn"
@@ -93,12 +93,13 @@
       "CHAIN_DATA": "/tmp/composable-devnet/.osmosisd",
       "CHAIN_ID": "osmosis-dev",
       "FEE": "uosmo",
-      "GRPCPORT": 19090,
+      "GRPCPORT": 19093,
       "GRPCWEB": 20094,
       "HOME": "/tmp/composable-devnet",
       "KEYRING_TEST": "/tmp/composable-devnet/.osmosisd",
       "NETWORK_ID": 3,
       "PORT": 26660,
+      "RESTPORT": 1519,
       "RPCPORT": 26660
     },
     "mainnet": {
@@ -140,12 +141,14 @@
       "DIR": "/tmp/composable-devnet/.centaurid",
       "FEE": "ppica",
       "GRPCPORT": 9090,
+      "GRPWEB": 9091,
       "HOME": "/tmp/composable-devnet",
       "KEYRING_TEST": "/tmp/composable-devnet/.centaurid",
       "NETWORK_ID": 2,
       "NODE": "tcp://localhost:26657",
       "PORT": 26657,
       "PREFIX": "centauri",
+      "RESTPORT": 1516,
       "RPCPORT": 26657
     },
     "mainnet": {
