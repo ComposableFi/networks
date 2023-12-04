@@ -8,7 +8,6 @@ let
     ACCOUNT_PREFIX = "neutron";
   };
   devnetTemplate = self: rec {
-    ACCOUNT_PREFIX = "neutron";
     HOME = "${devnet.devnetRootDirectory}";
     BASE_DIR = HOME;
     CHAIN_DATA = "${HOME}/.neutrond";
@@ -40,6 +39,6 @@ let
   };
 in
 {
-  devnet = let overriden = devnetTemplate (shared // overriden); in overriden;
-  mainnet = let overriden = mainnetTemplate (shared // overriden); in overriden;
+  devnet = let overriden = devnetTemplate shared; in shared // overriden;
+  mainnet = let overriden = mainnetTemplate shared; in shared // overriden;
 }
