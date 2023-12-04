@@ -68,7 +68,7 @@
       "P2PPORT": 26760,
       "PORT": 26661,
       "RESTPORT": 1520,
-      "ROSETTA": 8185,
+      "ROSETTA_PORT": 8185,
       "RPCPORT": 26661,
       "STAKEDENOM": "untrn"
     },
