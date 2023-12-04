@@ -16,15 +16,16 @@ in
   };
   devnet = self // rec {
     CHAIN_ID = "cosmos-hub-dev";
+    ROSETTA_PORT = 8181 + self.NETWORK_ID;
     P2PPORT = 26756 + self.NETWORK_ID;
     RPCPORT = 26657 + self.NETWORK_ID;
     RESTPORT = 1516 + self.NETWORK_ID;
-    ROSETTA = 8181 + self.NETWORK_ID;
     GRPCPORT = 19090 + self.NETWORK_ID;
     GRPCWEB = 20091 + self.NETWORK_ID;
     HOME = "${devnet.devnetRootDirectory}";
     BASE_DIR = HOME;
     CHAIN_DATA = "${HOME}/.gaiad";
+    CONFIG_FOLDER = "${CHAIN_DATA}/config";
     CHAIN_DIR = CHAIN_DATA;
     KEYRING_TEST = CHAIN_DATA;
     PORT = RPCPORT;

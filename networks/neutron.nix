@@ -19,9 +19,10 @@ let
     RPCPORT = 26657 + self.NETWORK_ID;
     RESTPORT = 1516 + self.NETWORK_ID;
     ROSETTA_PORT = 8181 + self.NETWORK_ID;
+
     GRPCPORT = 19090 + self.NETWORK_ID;
     GRPCWEB = 20091 + self.NETWORK_ID;
-
+    CONFIG_FOLDER = "${CHAIN_DATA}/config";
     BLOCK_SECONDS = 6;
     STAKEDENOM = self.FEE;
     IBCATOMDENOM = "uibcatom";
