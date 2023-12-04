@@ -1,11 +1,29 @@
 Flexible interchain multi domain registry using nextgen configuration language to configure and output our JSON/YAML/etc.
 
+## Usage
 
-Modify `networks.nix` and `nix run` to output JSON.
+### JSON
 
-This https://github.com/cosmos/chain-registry only for mainnets and Cosmos, while this repo additionally targets shells, devnets and non Cosmos chains.
-With nix chain-registry can be used as need with one liner.
+JSON output can be read directly by TypeScript and other tooling.s
 
-NIX allows to override inputs to replace local devnet ports as needed and validate there is no overlap.
+
+### NIX
+
+Can be used as flake input, so can be forked, modified, and used as `input-override`.
+
+## How to update
+
+
+1. Modify `networks` and `nix run` to output JSON.
+2. share changes via GIT
+
+## Why not https://github.com/cosmos/chain-registry 
+
+It only for mainnets and Cosmos, while this repo additionally targets shells, devnets and non Cosmos chains.
+With nix `chain-registry` can be used as need with one liner as dependency of this repo.
+
+
+## Internals
 
 During JSON generation it checks all ports and urls are unique.
+
