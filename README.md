@@ -9,7 +9,7 @@ JSON output can be read directly by TypeScript and other tooling.s
 
 ### NIX
 
-Can be used as flake input, so can be forked, modified, and used as `input-override`.
+Can be used as flake input or nixos module , so can be forked, modified, and used as `input-override` or override option in module import.
 
 ## How to update
 
@@ -21,8 +21,7 @@ Can be used as flake input, so can be forked, modified, and used as `input-overr
 
 It only for mainnets and Cosmos, while this repo additionally targets shells, devnets and non Cosmos chains.
 With nix `chain-registry` can be used as need with one liner as dependency of this repo.
-
-
+s
 ## Internals
 
 During JSON generation it checks all ports and urls are unique.

@@ -1,6 +1,6 @@
 { devnet }:
 let
-  shared = rec {
+  self = rec {
     BINARY = "gaiad";
     STAKEDENOM = FEE;
     FEE = "uatom";
@@ -9,19 +9,19 @@ let
   };
 in
 {
-  mainnet = shared // {
+  mainnet = self // {
     CHAIN_ID = "cosmos-hub-4";
     DIR = "prod/.gaiad";
     NODE = "https://rpc.cosmos-hub.zone:443";
   };
-  devnet = shared // rec {
+  devnet = self // rec {
     CHAIN_ID = "cosmos-hub-dev";
-    P2PPORT = 26856;
-    RPCPORT = 26657 + shared.NETWORK_ID;
-    RESTPORT = 1516 + shared.NETWORK_ID;
-    ROSETTA = 8281;
-    GRPCPORT = 19090 + shared.NETWORK_ID;
-    GRPCWEB = 19091 + shared.NETWORK_ID;
+    P2PPORT = 26756 + self.NETWORK_ID;
+    RPCPORT = 26657 + self.NETWORK_ID;
+    RESTPORT = 1516 + self.NETWORK_ID;
+    ROSETTA = 8181 + self.NETWORK_ID;
+    GRPCPORT = 19090 + self.NETWORK_ID;
+    GRPCWEB = 20091 + self.NETWORK_ID;
     HOME = "${devnet.devnetRootDirectory}";
     BASE_DIR = HOME;
     CHAIN_DATA = "${HOME}/.gaiad";
