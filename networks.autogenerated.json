@@ -168,9 +168,11 @@
       "CHAIN_ID": "centauri-1",
       "DIR": "prod/.centaurid",
       "FEE": "ppica",
+      "GRPC": "https://composable-grpc.polkachu.com:22290",
       "NETWORK_ID": 2,
       "NODE": "https://rpc.composable.nodestake.top:443",
-      "PREFIX": "centauri"
+      "PREFIX": "centauri",
+      "RPC": "https://composable-rpc.polkachu.com:443"
     },
     "testnet": {
       "BINARY": "centaurid",
