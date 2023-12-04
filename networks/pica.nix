@@ -14,7 +14,7 @@ in
     NODE = "https://rpc.composable.nodestake.top:443";
     BLOCK_TIME = 7;
     RPC = https://composable-rpc.polkachu.com:443;
-    GRPC = https://composable-grpc.polkachu.com:22290; 
+    GRPC = https://composable-grpc.polkachu.com:22290;
   };
   testnet = self // {
     CHAIN_ID = "banksy-testnet-3";
