@@ -29,7 +29,7 @@ in
     PORT = 26657;
     RPCPORT = PORT;
     GRPCPORT = 9090;
-    CHAIN_ID = "centauri-1";
+    CHAIN_ID = "centauri-dev";
     DIR = CHAIN_DATA;
     NODE = "tcp://localhost:${builtins.toString PORT}";
     BLOCK_TIME = 7;

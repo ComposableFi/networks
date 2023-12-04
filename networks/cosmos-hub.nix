@@ -2,8 +2,6 @@
 let
   shared = rec {
     BINARY = "gaiad";
-    CHAIN_ID = "cosmos-hub-4";
-    CHAINID = CHAIN_ID;
     STAKEDENOM = FEE;
     FEE = "uatom";
     NETWORK_ID = 5;
@@ -12,10 +10,12 @@ let
 in
 {
   mainnet = shared // {
+    CHAIN_ID = "cosmos-hub-4";
     DIR = "prod/.gaiad";
     NODE = "https://rpc.cosmos-hub.zone:443";
   };
   devnet = shared // rec {
+    CHAIN_ID = "cosmos-hub-dev";
     P2PPORT = 26856;
     RPCPORT = 28757 + shared.NETWORK_ID;
     RESTPORT = 1516;

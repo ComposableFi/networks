@@ -13,7 +13,6 @@ let
     CHAIN_DATA = "${HOME}/.neutrond";
     CHAIN_DIR = CHAIN_DATA;
     KEYRING_TEST = CHAIN_DATA;
-    CHAIN_ID = "neutron-1";
     CHAINID = CHAIN_ID;
     PORT = RPCPORT;
     P2PPORT = 26756;
@@ -27,6 +26,7 @@ let
     STAKEDENOM = self.FEE;
     IBCATOMDENOM = "uibcatom";
     IBCUSDCDENOM = "uibcusdc";
+    CHAIN_ID = "neutron-dev";
     NODE = "https://locahost:${builtins.toString PORT}";
   };
   mainnetTemplate = self: rec {
