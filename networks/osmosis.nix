@@ -1,9 +1,10 @@
 { devnet }:
-let 
+let
   shared = {
     NETWORK_ID = 3;
   };
-  in  {
+in
+{
 
   mainnet = shared // {
     FEE = "uosmo";
