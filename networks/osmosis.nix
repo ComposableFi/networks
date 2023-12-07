@@ -20,11 +20,11 @@ in
     CHAIN_DATA = "${HOME}/.osmosisd";
     KEYRING_TEST = CHAIN_DATA;
     CHAIN_ID = "osmosis-dev";
-    RPCPORT = PORT;
+    RPCPORT = 26657 + self.NETWORK_ID;
     GRPCPORT = 19090 + self.NETWORK_ID;
     GRPCWEB = 20091 + self.NETWORK_ID;
-    PORT = 26657 + self.NETWORK_ID;
     RESTPORT = 1516 + self.NETWORK_ID;
+    PROMETHEUS_PORT = 36660 + self.NETWORK_ID;
     CONFIG_FOLDER = "${CHAIN_DATA}/config";        
     CONSENSUS_GRPC_PORT = 39090 + self.NETWORK_ID;
     CONSENSUS_RPC_PORT = 38090 + self.NETWORK_ID;

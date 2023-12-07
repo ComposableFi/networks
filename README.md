@@ -21,7 +21,7 @@ Can be used as flake input or nixos module , so can be forked, modified, and use
 
 It only for mainnets and Cosmos, while this repo additionally targets shells, devnets and non Cosmos chains.
 With nix `chain-registry` can be used as need with one liner as dependency of this repo.
-s
+
 ## Internals
 
 During JSON generation it checks all local ports and remote urls are unique.
