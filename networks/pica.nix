@@ -27,15 +27,14 @@ in
     BASE_DIR = HOME;
     CHAIN_DATA = "${HOME}/.centaurid";
     CHAIN_DIR = CHAIN_DATA;
-    KEYRING_TEST = CHAIN_DATA;
-    PORT = 26657;
+    KEYRING_TEST = CHAIN_DATA;    
     RESTPORT = 1516;
-    RPCPORT = PORT;
+    CONSENSUS_RPC_PORT = 26657;
     GRPCPORT = 9090;
     GRPWEB = 9091;
     CHAIN_ID = "centauri-dev";
     DIR = CHAIN_DATA;
-    NODE = "tcp://localhost:${builtins.toString PORT}";
+    NODE = "tcp://localhost:${builtins.toString CONSENSUS_RPC_PORT}";
     BLOCK_TIME = 7;
   };
 }

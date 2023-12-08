@@ -38,8 +38,9 @@
   "devnet": {
     "devnetRootDirectory": "/tmp/composable-devnet",
     "mnemonics": {
+      "ALICE": "document prefer nurse marriage flavor cheese west when knee drink sorry minimum thunder tilt cherry behave cute stove elder couch badge gown coral expire",
       "APPLICATION1": "apart ahead month tennis merge canvas possible cannon lady reward traffic city hamster monitor lesson nasty midnight sniff enough spatial rare multiply keep task",
-      "APP_1": "apart ahead month tennis merge canvas possible cannon lady reward traffic city hamster monitor lesson nasty midnight sniff enough spatial rare multiply keep task",
+      "APPLICATION2": "coffee hospital claim ability wrap load display submit lecture solid secret law base barrel miss tattoo desert want wall bar ketchup sauce real unknown",
       "DEMO_MNEMONIC_1": "banner spread envelope side kite person disagree path silver will brother under couch edit food venture squirrel civil budget number acquire point work mass",
       "DEMO_MNEMONIC_2": "veteran try aware erosion drink dance decade comic dawn museum release episode original list ability owner size tuition surface ceiling depth seminar capable only",
       "DEMO_MNEMONIC_3": "obscure canal because tomorrow tribe sibling describe satoshi kiwi upgrade bless empty math trend erosion oblige donate label birth chronic hazard ensure wreck shine",
@@ -151,6 +152,7 @@
       "CHAIN_DATA": "/tmp/composable-devnet/.centaurid",
       "CHAIN_DIR": "/tmp/composable-devnet/.centaurid",
       "CHAIN_ID": "centauri-dev",
+      "CONSENSUS_RPC_PORT": 26657,
       "DIR": "/tmp/composable-devnet/.centaurid",
       "FEE": "ppica",
       "GRPCPORT": 9090,
@@ -159,10 +161,8 @@
       "KEYRING_TEST": "/tmp/composable-devnet/.centaurid",
       "NETWORK_ID": 2,
       "NODE": "tcp://localhost:26657",
-      "PORT": 26657,
       "PREFIX": "centauri",
-      "RESTPORT": 1516,
-      "RPCPORT": 26657
+      "RESTPORT": 1516
     },
     "mainnet": {
       "BINARY": "centaurid",
