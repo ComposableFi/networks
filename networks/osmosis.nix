@@ -2,6 +2,7 @@
 let
   self = {
     NETWORK_ID = 3;
+    ACCOUNT_PREFIX = "osmo";
   };
 in
 {

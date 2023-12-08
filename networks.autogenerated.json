@@ -1,6 +1,7 @@
 {
   "cosmos-hub": {
     "devnet": {
+      "ACCOUNT_PREFIX": "cosmos",
       "BASE_DIR": "/tmp/composable-devnet",
       "BINARY": "gaiad",
       "BLOCK_SECONDS": 6,
@@ -25,6 +26,7 @@
       "STAKEDENOM": "uatom"
     },
     "mainnet": {
+      "ACCOUNT_PREFIX": "cosmos",
       "BINARY": "gaiad",
       "BLOCK_SECONDS": 6,
       "CHAIN_ID": "cosmos-hub-4",
@@ -98,6 +100,7 @@
   },
   "osmosis": {
     "devnet": {
+      "ACCOUNT_PREFIX": "osmo",
       "BINARY": "osmosisd",
       "BLOCK_SECONDS": 5,
       "CHAIN_DATA": "/tmp/composable-devnet/.osmosisd",
@@ -117,6 +120,7 @@
       "RPCPORT": 26660
     },
     "mainnet": {
+      "ACCOUNT_PREFIX": "osmo",
       "BINARY": "osmosisd",
       "BLOCK_SECONDS": 6,
       "CHAIN_ID": "osmosis-1",
@@ -146,6 +150,7 @@
   },
   "pica": {
     "devnet": {
+      "ACCOUNT_PREFIX": "centauri",
       "BASE_DIR": "/tmp/composable-devnet",
       "BINARY": "centaurid",
       "BLOCK_TIME": 7,
@@ -161,10 +166,10 @@
       "KEYRING_TEST": "/tmp/composable-devnet/.centaurid",
       "NETWORK_ID": 2,
       "NODE": "tcp://localhost:26657",
-      "PREFIX": "centauri",
       "RESTPORT": 1516
     },
     "mainnet": {
+      "ACCOUNT_PREFIX": "centauri",
       "BINARY": "centaurid",
       "BLOCK_TIME": 7,
       "CHAIN_ID": "centauri-1",
@@ -173,18 +178,17 @@
       "GRPC": "https://composable-grpc.polkachu.com:22290",
       "NETWORK_ID": 2,
       "NODE": "https://composable-rpc.polkachu.com:443",
-      "PREFIX": "centauri",
       "RPC": "https://composable-rpc.polkachu.com:443"
     },
     "testnet": {
+      "ACCOUNT_PREFIX": "centauri",
       "BINARY": "centaurid",
       "BLOCK_TIME": 7,
       "CHAIN_ID": "banksy-testnet-3",
       "DIR": "testnet/.centaurid",
       "FEE": "ppica",
       "NETWORK_ID": 2,
-      "NODE": "https://rpc-t.composable.nodestake.top:443",
-      "PREFIX": "centauri"
+      "NODE": "https://rpc-t.composable.nodestake.top:443"
     }
   }
 }

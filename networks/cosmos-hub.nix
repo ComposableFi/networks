@@ -6,6 +6,7 @@ let
     FEE = "uatom";
     NETWORK_ID = 5;
     BLOCK_SECONDS = 6;
+    ACCOUNT_PREFIX = "cosmos";
   };
 in
 {

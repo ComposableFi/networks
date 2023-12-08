@@ -3,7 +3,7 @@ let
   self = {
     FEE = "ppica";
     NETWORK_ID = 2;
-    PREFIX = "centauri";
+    ACCOUNT_PREFIX = "centauri";
     BINARY = "centaurid";
   };
 in
