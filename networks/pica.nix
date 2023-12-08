@@ -8,10 +8,10 @@ let
   };
 in
 {
-  mainnet = self // {
+  mainnet = self // rec {
     CHAIN_ID = "centauri-1";
     DIR = "prod/.centaurid";
-    NODE = "https://rpc.composable.nodestake.top:443";
+    NODE = RPC;
     BLOCK_TIME = 7;
     RPC = https://composable-rpc.polkachu.com:443;
     GRPC = https://composable-grpc.polkachu.com:22290;

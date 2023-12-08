@@ -172,7 +172,7 @@
       "FEE": "ppica",
       "GRPC": "https://composable-grpc.polkachu.com:22290",
       "NETWORK_ID": 2,
-      "NODE": "https://rpc.composable.nodestake.top:443",
+      "NODE": "https://composable-rpc.polkachu.com:443",
       "PREFIX": "centauri",
       "RPC": "https://composable-rpc.polkachu.com:443"
     },
