@@ -13,6 +13,7 @@ rec {
       RLY_MNEMONIC_4 = "'symbol force gallery make bulk round subway violin worry mixture penalty kingdom boring survey tool fringe patrol sausage hard admit remember broken alien absorb'";
       FAUCET_MNEMONIC="'increase bread alpha rigid glide amused approve oblige print asset idea enact lawn proof unfold jeans rabbit audit return chuckle valve rather cactus great'";       
       APP_1 = "'apart ahead month tennis merge canvas possible cannon lady reward traffic city hamster monitor lesson nasty midnight sniff enough spatial rare multiply keep task'";     
+      APPLICATION1 = "'apart ahead month tennis merge canvas possible cannon lady reward traffic city hamster monitor lesson nasty midnight sniff enough spatial rare multiply keep task'";     
     };
   };
   pica = import ./pica.nix { inherit devnet; };
