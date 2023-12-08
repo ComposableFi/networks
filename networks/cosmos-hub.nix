@@ -12,7 +12,7 @@ in
   mainnet = self // {
     CHAIN_ID = "cosmos-hub-4";
     DIR = "prod/.gaiad";
-    NODE = "https://rpc.cosmos-hub.zone:443";
+    NODE = "https://rpc.cosmos.nodestake.top:443";
   };
   devnet = self // rec {
     CHAIN_ID = "cosmos-hub-dev";

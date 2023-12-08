@@ -8,7 +8,6 @@ in
 
   mainnet = self // {
     FEE = "uosmo";
-
     CHAIN_ID = "osmosis-1";
     DIR = "prod/.osmosisd";
     BINARY = "osmosisd";

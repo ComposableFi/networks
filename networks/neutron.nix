@@ -37,7 +37,7 @@ let
     IBCUSDCDENOM = "uibcusdc";
     CHAIN_ID = "neutron-1";
     DIR = "prod/.neutrond";
-    NODE = "https://rpc.neutron.zone:443";
+    NODE = "https://rpc.neutron.nodestake.top:443";
   };
 in
 {

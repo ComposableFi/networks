@@ -31,7 +31,7 @@
       "DIR": "prod/.gaiad",
       "FEE": "uatom",
       "NETWORK_ID": 5,
-      "NODE": "https://rpc.cosmos-hub.zone:443",
+      "NODE": "https://rpc.cosmos.nodestake.top:443",
       "STAKEDENOM": "uatom"
     }
   },
@@ -92,7 +92,7 @@
       "IBCATOMDENOM": "uibcatom",
       "IBCUSDCDENOM": "uibcusdc",
       "NETWORK_ID": 4,
-      "NODE": "https://rpc.neutron.zone:443",
+      "NODE": "https://rpc.neutron.nodestake.top:443",
       "STAKEDENOM": "untrn"
     }
   },
