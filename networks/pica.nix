@@ -15,6 +15,7 @@ in
     BLOCK_TIME = 7;
     RPC = https://composable-rpc.polkachu.com:443;
     GRPC = https://composable-grpc.polkachu.com:22290;
+    CVM_OUTPOST_CONTRACT_ADDRESS = "centauri1lkh7p89tdhkc52vkza5jus5xmgjqjut6ngucsn88mhmzaqc02h5qu89k2u";
   };
   testnet = self // {
     CHAIN_ID = "banksy-testnet-3";
@@ -27,7 +28,7 @@ in
     BASE_DIR = HOME;
     CHAIN_DATA = "${HOME}/.centaurid";
     CHAIN_DIR = CHAIN_DATA;
-    KEYRING_TEST = CHAIN_DATA;    
+    KEYRING_TEST = CHAIN_DATA;
     RESTPORT = 1516;
     CONSENSUS_RPC_PORT = 26657;
     GRPCPORT = 9090;

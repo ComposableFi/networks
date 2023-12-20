@@ -94,7 +94,7 @@
       "IBCATOMDENOM": "uibcatom",
       "IBCUSDCDENOM": "uibcusdc",
       "NETWORK_ID": 4,
-      "NODE": "https://rpc.neutron.nodestake.top:443",
+      "NODE": "https://rpc-kralum.neutron-1.neutron.org:443",
       "STAKEDENOM": "untrn"
     }
   },
@@ -124,6 +124,7 @@
       "BINARY": "osmosisd",
       "BLOCK_SECONDS": 6,
       "CHAIN_ID": "osmosis-1",
+      "CVM_OUTPOST_CONTRACT_ADDRESS": "osmo1sy7pdmawyerekcl6xwz4v2p87j726auntcu48fvhsy24rkhv7n4s9yg267",
       "DIR": "prod/.osmosisd",
       "FEE": "uosmo",
       "NETWORK_ID": 3,
@@ -173,6 +174,7 @@
       "BINARY": "centaurid",
       "BLOCK_TIME": 7,
       "CHAIN_ID": "centauri-1",
+      "CVM_OUTPOST_CONTRACT_ADDRESS": "centauri1lkh7p89tdhkc52vkza5jus5xmgjqjut6ngucsn88mhmzaqc02h5qu89k2u",
       "DIR": "prod/.centaurid",
       "FEE": "ppica",
       "GRPC": "https://composable-grpc.polkachu.com:22290",
