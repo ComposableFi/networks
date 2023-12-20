@@ -14,6 +14,7 @@ in
     BLOCK_SECONDS = 6;
     NODE = "https://rpc.osmosis.zone:443";    
     CVM_OUTPOST_CONTRACT_ADDRESS = "osmo1sy7pdmawyerekcl6xwz4v2p87j726auntcu48fvhsy24rkhv7n4s9yg267";
+    
   };
   devnet = self // rec {
     HOME = "${devnet.devnetRootDirectory}";
