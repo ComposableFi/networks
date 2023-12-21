@@ -16,7 +16,7 @@ in
     RPC = https://composable-rpc.polkachu.com:443;
     GRPC_SECURE = https://composable-grpc.polkachu.com:22290;
     GRPC = http://composable-grpc.polkachu.com:22290;
-    CVM_OUTPOST_CONTRACT_ADDRESS = "centauri1lkh7p89tdhkc52vkza5jus5xmgjqjut6ngucsn88mhmzaqc02h5qu89k2u";
+    CVM_OUTPOST_CONTRACT_ADDRESS = "centauri1vlh6knyx870k2mc9fspx08ka4fuddsxx6s8tjp83n7xkyckkgm8q25mwr6";
   };
   testnet = self // {
     CHAIN_ID = "banksy-testnet-3";
