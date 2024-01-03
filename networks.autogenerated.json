@@ -76,7 +76,7 @@
       "IBCUSDCDENOM": "uibcusdc",
       "KEYRING_TEST": "/tmp/composable-devnet/.neutrond",
       "NETWORK_ID": 4,
-      "NODE": "https://locahost:38094",
+      "NODE": "http://locahost:38094",
       "P2PPORT": 26760,
       "PORT": 26661,
       "RESTPORT": 1520,
