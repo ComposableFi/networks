@@ -17,7 +17,7 @@
       "HOME": "/tmp/composable-devnet",
       "KEYRING_TEST": "/tmp/composable-devnet/.gaiad",
       "NETWORK_ID": 5,
-      "NODE": "https://locahost:26662",
+      "NODE": "https://127.0.0.1:26662",
       "P2PPORT": 26761,
       "PORT": 26662,
       "RESTPORT": 1521,
@@ -76,7 +76,7 @@
       "IBCUSDCDENOM": "uibcusdc",
       "KEYRING_TEST": "/tmp/composable-devnet/.neutrond",
       "NETWORK_ID": 4,
-      "NODE": "tcp://locahost:38094",
+      "NODE": "tcp://127.0.0.1:38094",
       "P2PPORT": 26760,
       "PORT": 26661,
       "RESTPORT": 1520,
@@ -166,7 +166,7 @@
       "HOME": "/tmp/composable-devnet",
       "KEYRING_TEST": "/tmp/composable-devnet/.centaurid",
       "NETWORK_ID": 2,
-      "NODE": "tcp://localhost:26657",
+      "NODE": "tcp://127.0.0.1:26657",
       "RESTPORT": 1516
     },
     "mainnet": {

@@ -29,7 +29,7 @@ let
     IBCATOMDENOM = "uibcatom";
     IBCUSDCDENOM = "uibcusdc";
     CHAIN_ID = "neutron-dev";
-    NODE = "tcp://locahost:${builtins.toString CONSENSUS_RPC_PORT}";
+    NODE = "tcp://127.0.0.1:${builtins.toString CONSENSUS_RPC_PORT}";
   };
   mainnetTemplate = self: rec {
     STAKEDENOM = self.FEE;

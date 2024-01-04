@@ -32,7 +32,7 @@ in
     CHAIN_DIR = CHAIN_DATA;
     KEYRING_TEST = CHAIN_DATA;
     PORT = RPCPORT;
-    NODE = "https://locahost:${builtins.toString PORT}";
+    NODE = "https://127.0.0.1:${builtins.toString PORT}";
   };
 }
 
