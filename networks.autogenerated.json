@@ -38,6 +38,7 @@
     }
   },
   "devnet": {
+    "DEFAULT_DEVNET_DIRECTORY": "/var/run/devnet",
     "devnetRootDirectory": "/tmp/composable-devnet",
     "mnemonics": {
       "ALICE": "document prefer nurse marriage flavor cheese west when knee drink sorry minimum thunder tilt cherry behave cute stove elder couch badge gown coral expire",

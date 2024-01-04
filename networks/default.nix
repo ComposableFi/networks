@@ -1,6 +1,7 @@
 rec {
   devnet = {
     devnetRootDirectory = "/tmp/composable-devnet";
+    DEFAULT_DEVNET_DIRECTORY = "/var/run/devnet";
     mnemonics = {
       # action from usual users
       ALICE = "'document prefer nurse marriage flavor cheese west when knee drink sorry minimum thunder tilt cherry behave cute stove elder couch badge gown coral expire'";
