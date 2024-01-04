@@ -28,3 +28,6 @@ During JSON generation it checks all local ports and remote urls are unique.
 
 Local ports are checked not to be in well known list.
 
+### Why not OCI (Docker/K8S) YAML(Helm/Kustomize)
+
+With Nix there is no need for YAML, and part of OCI stack (dependency 'hell' and hermetic isolated builds) is solved.
