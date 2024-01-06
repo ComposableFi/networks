@@ -160,6 +160,7 @@
       "CHAIN_DIR": "/tmp/composable-devnet/.banksy",
       "CHAIN_DIR_NAME": ".banksy",
       "CHAIN_ID": "centauri-dev",
+      "CONSENSUS_GRPC_PORT": 27657,
       "CONSENSUS_RPC_PORT": 26657,
       "FEE": "ppica",
       "GRPCPORT": 9090,
