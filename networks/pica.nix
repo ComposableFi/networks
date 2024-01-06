@@ -27,7 +27,8 @@ in
   devnet = self // rec {
     HOME = "${devnet.devnetRootDirectory}";
     BASE_DIR = HOME;
-    CHAIN_DATA = "${HOME}/.banksy";
+    CHAIN_DIR_NAME = ".banksy";
+    CHAIN_DATA = "${HOME}/${CHAIN_DIR_NAME}";
     CHAIN_DIR = CHAIN_DATA;
     KEYRING_TEST = CHAIN_DATA;
     RESTPORT = 1516;
