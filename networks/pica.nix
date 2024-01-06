@@ -37,8 +37,6 @@ in
     GRPCPORT = 9090;
     GRPWEB = 9091;
     CHAIN_ID = "centauri-dev";
-    DIR = CHAIN_DATA;
     NODE = "tcp://127.0.0.1:${builtins.toString CONSENSUS_RPC_PORT}";
-    BLOCK_TIME = 7;
   };
 }
