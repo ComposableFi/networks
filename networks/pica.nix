@@ -28,6 +28,7 @@ in
     HOME = "${devnet.devnetRootDirectory}";
     BASE_DIR = HOME;
     CHAIN_DIR_NAME = ".banksy";
+    BLOCK_SECONDS=5;
     CHAIN_DATA = "${HOME}/${CHAIN_DIR_NAME}";
     CHAIN_DIR = CHAIN_DATA;
     KEYRING_TEST = CHAIN_DATA;
