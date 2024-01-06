@@ -10,7 +10,7 @@ in
 {
   mainnet = self // rec {
     CHAIN_ID = "centauri-1";
-    DIR = "prod/.centaurid";
+    DIR = "prod/.banksy";
     NODE = RPC;
     BLOCK_TIME = 7;
     RPC = https://composable-rpc.polkachu.com:443;
@@ -20,14 +20,14 @@ in
   };
   testnet = self // {
     CHAIN_ID = "banksy-testnet-3";
-    DIR = "testnet/.centaurid";
+    DIR = "testnet/.banksy";
     NODE = "https://rpc-t.composable.nodestake.top:443";
     BLOCK_TIME = 7;
   };
   devnet = self // rec {
     HOME = "${devnet.devnetRootDirectory}";
     BASE_DIR = HOME;
-    CHAIN_DATA = "${HOME}/.centaurid";
+    CHAIN_DATA = "${HOME}/.banksy";
     CHAIN_DIR = CHAIN_DATA;
     KEYRING_TEST = CHAIN_DATA;
     RESTPORT = 1516;
