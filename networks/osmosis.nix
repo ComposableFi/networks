@@ -17,23 +17,23 @@ in
     
   };
   devnet = self // rec {
-    HOME = "${devnet.devnetRootDirectory}";
+    BINARY = "osmosisd";
+    BLOCK_SECONDS = 5;
     CHAIN_DATA = "${HOME}/.osmosisd";
-    KEYRING_TEST = CHAIN_DATA;
     CHAIN_ID = "osmosis-dev";
-    RPCPORT = 26657 + self.NETWORK_ID;
-    GRPCPORT = 19090 + self.NETWORK_ID;
-    GRPCWEB = 20091 + self.NETWORK_ID;
-    RESTPORT = 1516 + self.NETWORK_ID;
-    PROMETHEUS_PORT = 36660 + self.NETWORK_ID;
     CONFIG_FOLDER = "${CHAIN_DATA}/config";        
     CONSENSUS_GRPC_PORT = 39090 + self.NETWORK_ID;
     CONSENSUS_RPC_PORT = 38090 + self.NETWORK_ID;
-    P2PPORT = 26756 + self.NETWORK_ID;
-    BLOCK_SECONDS = 5;
     FEE = "uosmo";
-    BINARY = "osmosisd";
+    GRPCPORT = 19090 + self.NETWORK_ID;
+    GRPCWEB = 20091 + self.NETWORK_ID;
+    HOME = "${devnet.devnetRootDirectory}";
+    KEYRING_TEST = CHAIN_DATA;
     NODE = "tcp://127.0.0.1:${builtins.toString CONSENSUS_RPC_PORT}";
+    P2PPORT = 26756 + self.NETWORK_ID;
+    PROMETHEUS_PORT = 36660 + self.NETWORK_ID;
+    RESTPORT = 1516 + self.NETWORK_ID;
+    RPCPORT = 26657 + self.NETWORK_ID;
   };
 
   remote-devnet = {
