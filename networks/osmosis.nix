@@ -33,6 +33,7 @@ in
     BLOCK_SECONDS = 5;
     FEE = "uosmo";
     BINARY = "osmosisd";
+    NODE = "tcp://127.0.0.1:${builtins.toString CONSENSUS_RPC_PORT}";
   };
 
   remote-devnet = {

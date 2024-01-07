@@ -115,6 +115,7 @@
       "HOME": "/tmp/composable-devnet",
       "KEYRING_TEST": "/tmp/composable-devnet/.osmosisd",
       "NETWORK_ID": 3,
+      "NODE": "tcp://127.0.0.1:38093",
       "P2PPORT": 26759,
       "PROMETHEUS_PORT": 36663,
       "RESTPORT": 1519,
