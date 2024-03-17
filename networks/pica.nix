@@ -25,7 +25,7 @@ in
     BLOCK_TIME = 7;
   };
   devnet = self // rec {
-    HOME = "${devnet.devnetRootDirectory}";
+    HOME = "${devnet.directories.DEVNET_DATA_DIRECTORY}";
     BASE_DIR = HOME;
     CHAIN_DIR_NAME = ".banksy";
     BLOCK_SECONDS=5;

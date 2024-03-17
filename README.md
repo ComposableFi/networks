@@ -1,4 +1,4 @@
-Flexible interchain multi domain registry using nextgen configuration language to configure and output our JSON/YAML/etc.
+Flexible interchain multi domain registry using Nix configuration language to configure and output our JSON/YAML/etc with deep integration with shell.
 
 ## Usage
 

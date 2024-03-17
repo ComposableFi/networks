@@ -27,7 +27,7 @@ in
     FEE = "uosmo";
     GRPCPORT = 19090 + self.NETWORK_ID;
     GRPCWEB = 20091 + self.NETWORK_ID;
-    HOME = "${devnet.devnetRootDirectory}";
+    HOME = "${devnet.directories.DEVNET_DATA_DIRECTORY}";
     KEYRING_TEST = CHAIN_DATA;
     NODE = "tcp://127.0.0.1:${builtins.toString CONSENSUS_RPC_PORT}";
     P2PPORT = 26756 + self.NETWORK_ID;
