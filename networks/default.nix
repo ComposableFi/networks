@@ -27,8 +27,8 @@ rec {
       VAL_MNEMONIC_2 = "'angry twist harsh drastic left brass behave host shove marriage fall update business leg direct reward object ugly security warm tuna model broccoli choice'";
       VAL_MNEMONIC_3 = "'bottom loan skill merry east cradle onion journey palm apology verb edit desert impose absurd oil bubble sweet glove shallow size build burst effort'";
 
-      # EXCHNANGE_1 = "'traffic cool olive pottery elegant innocent aisle dial genuine install shy uncle ride federal soon shift flight program cave famous provide cute pole struggle'";
-      # MANTIS_1 = "'green inch denial draw output great truth source dad summer betray price used claim lab garment scout twice increase buyer banana sniff forum salad'"; 
+      EXCHNANGE_1 = "'traffic cool olive pottery elegant innocent aisle dial genuine install shy uncle ride federal soon shift flight program cave famous provide cute pole struggle'";
+      MANTIS_1 = "'green inch denial draw output great truth source dad summer betray price used claim lab garment scout twice increase buyer banana sniff forum salad'"; 
     }; 
   };
   pica = import ./pica.nix { inherit devnet; };
