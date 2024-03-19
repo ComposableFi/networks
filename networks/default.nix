@@ -7,6 +7,7 @@ rec {
     mnemonics = {
       # action from usual users
       ALICE = "'document prefer nurse marriage flavor cheese west when knee drink sorry minimum thunder tilt cherry behave cute stove elder couch badge gown coral expire'";
+      BOB = "'bleak slush nose opinion document sample embark couple cabbage soccer cage slow father witness canyon ring distance hub denial topic great beyond actress problem'";
       # APPLICATIONS are used to setup/own/admin contracts
       APPLICATION1 = "'apart ahead month tennis merge canvas possible cannon lady reward traffic city hamster monitor lesson nasty midnight sniff enough spatial rare multiply keep task'";
       APPLICATION2 = "'coffee hospital claim ability wrap load display submit lecture solid secret law base barrel miss tattoo desert want wall bar ketchup sauce real unknown'";
