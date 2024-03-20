@@ -2,7 +2,7 @@ rec {
   devnet = {
     directories = {
       DEVNET_DATA_DIRECTORY = "~/.devnet";
-      DEVNET_LOG_DIRECTORY = "/var/log/devnet";
+      DEVNET_LOG_DIRECTORY = "~/.devnet";
     };
     mnemonics = {
       # action from usual users

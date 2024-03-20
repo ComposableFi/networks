@@ -40,7 +40,7 @@
   "devnet": {
     "directories": {
       "DEVNET_DATA_DIRECTORY": "~/.devnet",
-      "DEVNET_LOG_DIRECTORY": "/var/log/devnet"
+      "DEVNET_LOG_DIRECTORY": "~/.devnet"
     },
     "mnemonics": {
       "ALICE": "document prefer nurse marriage flavor cheese west when knee drink sorry minimum thunder tilt cherry behave cute stove elder couch badge gown coral expire",
@@ -177,7 +177,7 @@
       "GRPWEB": 9091,
       "HOME": "~/.devnet",
       "KEYRING_TEST": "~/.devnet/.banksy",
-      "LOG_DIRECTORY": "/var/log/devnet/banksy",
+      "LOG_DIRECTORY": "~/.devnet/.banksy/logs",
       "NETWORK_ID": 2,
       "NODE": "tcp://127.0.0.1:26657",
       "RESTPORT": 1516

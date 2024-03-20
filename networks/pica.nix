@@ -26,7 +26,7 @@ in
   };
   devnet = self // rec {
     HOME = "${devnet.directories.DEVNET_DATA_DIRECTORY}";
-    LOG_DIRECTORY="${devnet.directories.DEVNET_LOG_DIRECTORY}/banksy";
+    LOG_DIRECTORY="${devnet.directories.DEVNET_LOG_DIRECTORY}/.banksy/logs";
     BASE_DIR = HOME;
     CHAIN_DIR_NAME = ".banksy";
     BLOCK_SECONDS=5;
