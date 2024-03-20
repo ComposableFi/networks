@@ -19,7 +19,7 @@ rec {
       FAUCET_MNEMONIC = "'increase bread alpha rigid glide amused approve oblige print asset idea enact lawn proof unfold jeans rabbit audit return chuckle valve rather cactus great'";
       # RLY should be unique as these background relayers
       RLY_MNEMONIC_1 = "'derive kangaroo decrease ankle business zone timber innocent buyer multiply hero bench shop sausage human fury sauce detail level glow proud three animal uphold'";
-      RLY_MNEMONIC_2 = "'record gift you once hip style during joke field prize dust unique length more pencil transfer quit train device arrive energy sort steak upset'";
+      RLY_MNEMONIC_2 = "'region own pencil deliver easily gauge index august guide sibling copper rail range fame dragon snow print dragon pledge census evidence evoke invest peanut'";
       RLY_MNEMONIC_3 = "'black frequent sponsor nice claim rally hunt suit parent size stumble expire forest avocado mistake agree trend witness lounge shiver image smoke stool chicken'";
       RLY_MNEMONIC_4 = "'symbol force gallery make bulk round subway violin worry mixture penalty kingdom boring survey tool fringe patrol sausage hard admit remember broken alien absorb'";
       
