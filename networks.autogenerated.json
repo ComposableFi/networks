@@ -177,6 +177,7 @@
       "GRPWEB": 9091,
       "HOME": "~/.devnet",
       "KEYRING_TEST": "~/.devnet/.banksy",
+      "LOG_DIRECTORY": "/var/log/devnet/banksy",
       "NETWORK_ID": 2,
       "NODE": "tcp://127.0.0.1:26657",
       "RESTPORT": 1516
