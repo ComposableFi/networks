@@ -39,4 +39,5 @@ rec {
   neutron = import ./neutron.nix { inherit devnet; };
   cosmos-hub = import ./cosmos-hub.nix { inherit devnet; };
   osmosis = import ./osmosis.nix { inherit devnet; };
+  osmosis-centauri = import ./osmosis-centauri.nix { inherit devnet; chain_a = pica; chain_b = osmosis;   };
 }

@@ -159,6 +159,16 @@
       "NODE": "https://rpc.testnet.osmosis.zone:443"
     }
   },
+  "osmosis-centauri": {
+    "devnet": {
+      "CHAIN_ID_A": "centauri-dev",
+      "CHAIN_ID_B": "osmosis-dev",
+      "HOME": "~/.devnet",
+      "RELAY_DATA": "~/.devnet/osmosis-centauri",
+      "REST_PORT": 31066,
+      "TELEMETRY_PORT": 30142
+    }
+  },
   "pica": {
     "devnet": {
       "ACCOUNT_PREFIX": "centauri",
