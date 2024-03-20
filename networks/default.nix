@@ -30,6 +30,9 @@ rec {
 
       EXCHNANGE_1 = "'traffic cool olive pottery elegant innocent aisle dial genuine install shy uncle ride federal soon shift flight program cave famous provide cute pole struggle'";
       MANTIS_1 = "'green inch denial draw output great truth source dad summer betray price used claim lab garment scout twice increase buyer banana sniff forum salad'"; 
+
+      TEST1 = "'notice oak worry limit wrap speak medal online prefer cluster roof addict wrist behave treat actual wasp year salad speed social layer crew genius'";
+      TEST2 = "'quality vacuum heart guard buzz spike sight swarm shove special gym robust assume sudden deposit grid alcohol choice devote leader tilt noodle tide penalty'";
     }; 
   };
   pica = import ./pica.nix { inherit devnet; };
