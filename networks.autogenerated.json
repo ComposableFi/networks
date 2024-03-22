@@ -38,11 +38,9 @@
   },
   "devnet": {
     "directories": {
-      "devnet": {
-        "DATA_DIRECTORY": ".",
-        "HOME": "$HOME/.devnet",
-        "LOG_DIRECTORY": "."
-      }
+      "DATA_DIRECTORY": ".",
+      "HOME": "$HOME/.devnet",
+      "LOG_DIRECTORY": "."
     },
     "mnemonics": {
       "ALICE": "document prefer nurse marriage flavor cheese west when knee drink sorry minimum thunder tilt cherry behave cute stove elder couch badge gown coral expire",
