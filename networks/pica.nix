@@ -24,11 +24,11 @@ in
     BLOCK_TIME = 7;
   };
   devnet = self // rec {
-    LOG_DIRECTORY="${CHAIN_DIR_NAME}/logs";
-    BASE_DIR = ".";
+    LOG_DIRECTORY="${devnet.directories.LOG_DIRECTORY}/${CHAIN_DIR_NAME}/logs";
+    BASE_DIR = devnet.directories.DATA_DIRECTORY;
     CHAIN_DIR_NAME = ".banksy";
     BLOCK_SECONDS=5;
-    CHAIN_DATA = CHAIN_DIR_NAME;
+    CHAIN_DATA = "${BASE_DIR}/${CHAIN_DIR_NAME}";
     CHAIN_DIR = CHAIN_DATA;
     CONFIG_FOLDER = "${CHAIN_DATA}/config";
     KEYRING_TEST = CHAIN_DATA;

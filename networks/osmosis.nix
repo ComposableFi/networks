@@ -12,12 +12,13 @@ in
     DIR = "prod/.osmosisd";
     BINARY = "osmosisd";
     BLOCK_SECONDS = 6;
-    NODE = "https://rpc.osmosis.zone:443";        
+    NODE = "https://rpc.osmosis.zone:443";    
+    
   };
   devnet = self // rec {
     BINARY = "osmosisd";
     BLOCK_SECONDS = 5;
-    CHAIN_DATA = ".osmosisd";
+    CHAIN_DATA = "${devnet.directories.DATA_DIRECTORY}/.osmosisd";
     CHAIN_ID = "osmosis-dev";
     CONFIG_FOLDER = "${CHAIN_DATA}/config";        
     CONSENSUS_GRPC_PORT = 39090 + self.NETWORK_ID;
