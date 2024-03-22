@@ -8,9 +8,8 @@ let
     ACCOUNT_PREFIX = "neutron";
   };
   devnetTemplate = self: rec {
-    HOME = "${devnet.directories.DEVNET_DATA_DIRECTORY}";
-    BASE_DIR = HOME;
-    CHAIN_DATA = "${HOME}/.neutrond";
+    BASE_DIR = ".";
+    CHAIN_DATA = "${BASE_DIR}/.neutrond";
     CHAIN_DIR = CHAIN_DATA;
     KEYRING_TEST = CHAIN_DATA;
     CHAINID = CHAIN_ID;

@@ -25,9 +25,8 @@ in
     CONSENSUS_GRPC_PORT = 39090 + self.NETWORK_ID;
     CONSENSUS_RPC_PORT = 38090 + self.NETWORK_ID;
     GRPCWEB = 20091 + self.NETWORK_ID;
-    HOME = "${devnet.directories.DEVNET_DATA_DIRECTORY}";
-    BASE_DIR = HOME;
-    CHAIN_DATA = "${HOME}/.gaiad";
+    BASE_DIR = ".";
+    CHAIN_DATA = "${BASE_DIR}/.gaiad";
     CONFIG_FOLDER = "${CHAIN_DATA}/config";
     CHAIN_DIR = CHAIN_DATA;
     KEYRING_TEST = CHAIN_DATA;

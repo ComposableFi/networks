@@ -12,14 +12,12 @@ in
     DIR = "prod/.osmosisd";
     BINARY = "osmosisd";
     BLOCK_SECONDS = 6;
-    NODE = "https://rpc.osmosis.zone:443";    
-    CVM_OUTPOST_CONTRACT_ADDRESS = "osmo1sy7pdmawyerekcl6xwz4v2p87j726auntcu48fvhsy24rkhv7n4s9yg267";
-    
+    NODE = "https://rpc.osmosis.zone:443";        
   };
   devnet = self // rec {
     BINARY = "osmosisd";
     BLOCK_SECONDS = 5;
-    CHAIN_DATA = "${HOME}/.osmosisd";
+    CHAIN_DATA = ".osmosisd";
     CHAIN_ID = "osmosis-dev";
     CONFIG_FOLDER = "${CHAIN_DATA}/config";        
     CONSENSUS_GRPC_PORT = 39090 + self.NETWORK_ID;

@@ -16,7 +16,6 @@ in
     RPC = https://composable-rpc.polkachu.com:443;
     GRPC_SECURE = https://composable-grpc.polkachu.com:22290;
     GRPC = http://composable-grpc.polkachu.com:22290;
-    CVM_OUTPOST_CONTRACT_ADDRESS = "centauri1vlh6knyx870k2mc9fspx08ka4fuddsxx6s8tjp83n7xkyckkgm8q25mwr6";
   };
   testnet = self // {
     CHAIN_ID = "banksy-testnet-3";
@@ -25,12 +24,11 @@ in
     BLOCK_TIME = 7;
   };
   devnet = self // rec {
-    HOME = "${devnet.directories.DEVNET_DATA_DIRECTORY}";
-    LOG_DIRECTORY="${devnet.directories.DEVNET_LOG_DIRECTORY}/.banksy/logs";
-    BASE_DIR = HOME;
+    LOG_DIRECTORY="${CHAIN_DIR_NAME}/logs";
+    BASE_DIR = ".";
     CHAIN_DIR_NAME = ".banksy";
     BLOCK_SECONDS=5;
-    CHAIN_DATA = "${HOME}/${CHAIN_DIR_NAME}";
+    CHAIN_DATA = CHAIN_DIR_NAME;
     CHAIN_DIR = CHAIN_DATA;
     CONFIG_FOLDER = "${CHAIN_DATA}/config";
     KEYRING_TEST = CHAIN_DATA;
