@@ -118,7 +118,6 @@
       "FEE": "uosmo",
       "GRPCPORT": 19093,
       "GRPCWEB": 20094,
-      "HOME": "$HOME/.devnet",
       "KEYRING_TEST": ".osmosisd",
       "NETWORK_ID": 3,
       "NODE": "tcp://127.0.0.1:38093",
@@ -160,8 +159,7 @@
     "devnet": {
       "CHAIN_ID_A": "centauri-dev",
       "CHAIN_ID_B": "osmosis-dev",
-      "HOME": "$HOME/.devnet",
-      "RELAY_DATA": "$HOME/.devnet/osmosis-centauri",
+      "RELAY_DATA": "./osmosis-centauri",
       "REST_PORT": 31066,
       "TELEMETRY_PORT": 30142
     }
