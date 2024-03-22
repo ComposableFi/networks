@@ -1,8 +1,11 @@
 rec {
   devnet = {
     directories = {
-      DEVNET_DATA_DIRECTORY = "$HOME/.devnet";
-      DEVNET_LOG_DIRECTORY = "$HOME/.devnet";
+      devnet = {
+        HOME= "$HOME/.devnet";
+        DATA_DIRECTORY = ".";
+        LOG_DIRECTORY = ".";
+      };
     };
     mnemonics = {
       # action from usual users
